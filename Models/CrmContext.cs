@@ -8,7 +8,17 @@ public partial class CrmContext : DbContext
 {
     public CrmContext()
     {
-        
+        Database.EnsureCreated();
+        // User newuser= new User("olfa@gmail.com","123","Karray","Olfa","123","Admin");
+        // Users.Add(newuser);
+        // Client newClient = new Client("Carrefour",true,20,25000,"Chaîne de supermarchés et d'hypermarchés");
+        // Clients.Add(newClient);
+        // Order newOrder = new Order("développement web",1,10,1200,20,"CONFIRMED","Formation sur les dernières technologies en matière de sécurité informatique");
+        // Orders.Add(newOrder);
+        // SaveChanges();
+        // Console.WriteLine("orders creer");
+
+
     }
 
     public CrmContext(DbContextOptions<CrmContext> options)

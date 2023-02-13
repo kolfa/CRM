@@ -22,9 +22,9 @@ public partial class User
     {
 
     }
-    public User(int Id, string Email,string Password,string FirstName,string LastName,string Confirmedpassword,string Grants)
+    public User(string Email,string Password,string FirstName,string LastName,string Confirmedpassword,string Grants)
     {
-        this.Id =Id;
+        
         this.Email=Email;
         this.Password=Password;
         this.FirstName=FirstName;

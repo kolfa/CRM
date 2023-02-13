@@ -17,22 +17,24 @@ public partial class Order
 
     public decimal? Tva { get; set; }
 
-    public bool? State { get; set; }
+    public string? State { get; set; }
+    public string? Comment { get; set; }
 
     public virtual Client IdClientNavigation { get; set; } = null!;
     public Order()
     {
 
     }
-    public Order(int Id,string TypePresta,int IdClient,decimal NbJours, decimal TjmHt,decimal Tva,bool State)
+    public Order(string TypePresta,int IdClient,decimal NbJours, decimal TjmHt,decimal Tva,string State,string comment)
     {
-        this.Id =Id;
+        
         this.TypePresta=TypePresta;
         this.IdClient=IdClient; 
         this.NbJours=NbJours;
         this.TjmHt=TjmHt;
         this.Tva=Tva;
         this.State=State;
+        this.Comment=comment;
 
     }
 }

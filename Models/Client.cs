@@ -22,9 +22,9 @@ public partial class Client
     {
 
     }
-    public Client(int Id,string Name,bool State,decimal Tva,decimal TotalCaHt,string Comment)
+    public Client(string Name,bool State,decimal Tva,decimal TotalCaHt,string Comment)
     {
-        this.Id=Id;
+        
         this.Name=Name;
         this.State=State;
         this.Tva=Tva;
